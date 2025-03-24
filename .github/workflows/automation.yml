@@ -22,6 +22,9 @@ jobs:
       - name: 💿 Install Zotero2Readwise Python package
         run: pip install zotero2readwise
 
+        - name: Upgrade zotero2readwise
+        run: pip install --upgrade zotero2readwise
+
       - name: 📥 Download the Python script needed for automation
         run:  curl https://raw.githubusercontent.com/e-alizadeh/Zotero2Readwise/master/zotero2readwise/run.py -o run.py
       
