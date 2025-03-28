@@ -20,7 +20,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-        
+
+      - name: Set Poetry environment to system Python
+        run: poetry env use $(which python)
+
       - name: 💿 Install your modified Zotero2Readwise
         run: |
           pip uninstall -y zotero2readwise
