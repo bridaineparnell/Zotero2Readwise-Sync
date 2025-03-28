@@ -21,8 +21,8 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Set Poetry environment to system Python
-        run: poetry env use $(which python)
+      - name: Install Poetry
+        run: curl -sSL https://install.python-poetry.org | python3 -
 
       - name: 💿 Install your modified Zotero2Readwise
         run: |
