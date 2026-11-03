@@ -16,10 +16,10 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: 🐍 Set up Python 3.9
+      - name: 🐍 Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.11'
 
       - name: 💿 Install your modified Zotero2Readwise package and pyzotero 1.6.9
         run: |
